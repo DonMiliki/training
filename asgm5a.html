@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Creating a Contact us Form</h1>
+    <form action="submit.html" method="GET">
+        <div><label style="color: blue;">Email Address</label>
+        <input type="email">
+    </div>
+    <br>
+       <div><label>First Name</label>
+        <input type="text">
+        <label>Surname</label>
+        <input type="text">
+        <label>Mother's maiden name</label>
+        <input type="text">
+    </div>
+    <br>
+       <div> <label>Gender</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+    </div>
+    <br>
+    <div> <label>Home Address</label>
+        <textarea id="Home Address" name="Home Address" rows="3" cols="50"></textarea>
+    </div>
+    <br>
+       <div><label>Country
+            <select style="color: green;">
+                <option>Nigeria</option>
+                <option>USA</option>
+                <option>United Kingdom</option>
+                <option>Austria</option>
+                <option>Australia</option>
+            </select>
+        </div>
+        <br>  
+    <div> </label>
+        <label>Feedback</label>
+        <input type="checkbox" name="Fax" value="Fax">Fax
+        <input type="checkbox" name="phone" value="phone">Phone
+        <input type="checkbox" name="sms" value="sms">SMS
+        <input type="checkbox" name="email" value="email">Email
+    </div>
+    <br>
+    <div> <input type="submit" value="Submit" style="color: red; background-color: black; padding: 5px;">
+    </div>
+    <div> <input type="reset" value="Reset" style="color: crimson;">
+    </div>
+    </form>
+</body>
+</html>
