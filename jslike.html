@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    
+</style>
+<body>
+     
+    <button type="button" id="btns" onclick="increaseLikes()">Like</button>
+    
+    <script type="text/javascript">
+        var number = 0
+        function increaseLikes()
+        {
+            number++
+           if(number <= 1){
+            document.getElementById('btns').innerHTML = number  + ' Like '
+           }else(
+            document.getElementById('btns').innerHTML = number + ' Likes '
+           ) 
+            
+        }
+        
+    </script>
+</body>
+</html>

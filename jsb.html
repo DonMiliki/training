@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="border: 1px solid red; display: inline-block;">
+        <h1 style="color: red;">Login Here</h1>
+        <label>Username</label>
+        <input type="text" name="firstname" id="firstname">
+        <label>Password</label>
+        <input type="password" name="password" id="password">
+        <button type="button" id="btns" onclick="togglePassword()">Show Password</button>
+    </div>
+    
+
+
+    <script type="text/javascript">
+        function togglePassword()
+        { var passwordField = document.getElementById('password')
+        if(passwordField.type == 'password')
+        {
+            passwordField.type = 'text';
+            document.getElementById('btns').innerHTML = 'Hide Password'
+        }else{
+            passwordField.type = 'password';
+            document.getElementById('btns').innerHTML = 'Show Password' 
+        }
+
+        }
+
+
+    </script>
+</body>
+</html>

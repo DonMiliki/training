@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Grade Converter</h1>
+    <p id="result">Invalid input. Try again.</p>
+
+
+
+
+    <script>
+        let userPrompt = parseInt(
+            prompt("Select a shape. Circle. Square. Triangle. Exit")
+        )
+
+        
+        var output =""
+
+        switch(true){
+        case userPrompt === 1:
+        output = "Circle";
+        break;
+
+        case userPrompt === 2:
+        output = "Square";
+        break;
+
+        case userPrompt === 3:
+        output = "Triangle";
+        break;
+
+        case userPrompt >3:
+        output = document.getElementById("result").innerHTML;
+        break;
+
+
+        default:
+        output = "Exiting the program...."
+
+        }
+        document.getElementById("result").innerHTML = output;
+
+//         function selectShape() {
+//     while (true) {
+//         var choice = prompt("Select a shape:\n1. Circle\n2. Square\n3. Triangle\n4. Exit");
+        
+//         if (choice === "1") {
+//             alert("You selected Circle.");
+//         } else if (choice === "2") {
+//             alert("You selected Square.");
+//         } else if (choice === "3") {
+//             alert("You selected Triangle.");
+//         } else if (choice === "4") {
+//             alert("Exiting the program...");
+//             break;
+//         } else {
+//             alert("Invalid input. Please enter a number between 1 and 4.");
+//         }
+//     }
+// }
+
+// selectShape();
+
+
+
+
+        
+    </script>
+</body>
+</html>

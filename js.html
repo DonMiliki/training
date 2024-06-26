@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="mike">Jamb Result Portal</h1>
+    <form>
+       <p> <select style="color: green;">
+            <option id="center">Select Center</option>
+            <option>Lagos</option>
+            <option>Ogun</option>
+            <option>Osun</option>
+           </select>
+      </p>
+      <p>
+        <label>Score</label>
+        <input type="text" name="score" id="score">
+      </p>
+      <button onclick="getResult()">Submit</button>
+
+    </form>
+    
+
+     <script>
+    function getResult()
+    var result = document.getElementById("center").value
+    var score =document.getElementById("score").value
+    if(center == "" || score =="" )
+    {alert('please fill the fields');}
+    
+    
+    </script> 
+    
+</body>
+</html>

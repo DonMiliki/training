@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Calculator</h2>
+    
+        
+        <input type="text" name="number1" id="number1">
+        <input type="text" name="number2" id="number2">
+
+        <button type="button" onclick="addNumbers()" style="background-color: blue; color: white;">Add</button>
+        <button type="button" onclick="subtractNumbers()" style="background-color: burlywood; color: white;">Subtract</button>
+        <button type="button" onclick="divideNumbers()" style="background-color: aqua; color: white;">Divide</button>
+        <button type="button" onclick="multiplyNumbers()" style="background-color: aqua; color: white;">Multiply</button>
+
+    
+
+
+    <script type="text/javascript">
+        function addNumbers(){
+        var number1 = document.getElementById('number1').value
+        var number2 = document.getElementById('number2').value
+        var total = parseInt(number1) + parseInt(number2);
+        alert(total);   
+    }
+
+    function subtractNumbers(){
+        var number1 = document.getElementById('number1').value
+        var number2 = document.getElementById('number2').value
+        var total = parseInt(number1) - parseInt(number2);
+        alert(total);
+    }
+
+    function divideNumbers(){
+        var number1 = document.getElementById('number1').value
+        var number2 = document.getElementById('number2').value
+        var total = parseInt(number1) / parseInt(number2);
+        alert(total);  
+    }
+
+    function multiplyNumbers(){
+        var number1 = document.getElementById('number1').value
+        var number2 = document.getElementById('number2').value
+        var total = parseInt(number1) * parseInt(number2);
+        alert(total);  
+    }
+        
+
+
+
+
+    </script>
+</body>
+</html>

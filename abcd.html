@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figure Addition</title>
+</head>
+<body>
+
+<!-- <label for="figure1">Figure 1:</label> -->
+<input type="number" id="figure1" placeholder="Enter figure 1">
+
+<!-- <label for="figure2">Figure 2:</label> -->
+<input type="number" id="figure2" placeholder="Enter figure 2">
+
+<button onclick="calculate()">Calculate</button>
+
+<!-- <label for="result">Result:</label> -->
+<input type="text" id="result" readonly>
+
+<script>
+function calculate() {
+    // Get the values from the input fields
+    var figure1 = parseFloat(document.getElementById('figure1').value);
+    var figure2 = parseFloat(document.getElementById('figure2').value);
+    
+    // Perform the action (addition)
+    var result = figure1 * figure2;
+    
+    
+    // Display the result in the third input field
+    document.getElementById('result').value = result;
+}
+</script>
+
+</body>
+</html>
